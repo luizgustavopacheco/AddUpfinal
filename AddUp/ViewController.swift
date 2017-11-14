@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     var w: CGFloat! = 0.0
     
     //# MARK: - Instances
-    var quebecTaxesObj: QuebecTaxes!
+    var quebecTaxesObj: MichiganTaxe!
     
     //# MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.quebecTaxesObj = QuebecTaxes()
+        self.quebecTaxesObj = MichiganTaxe()
         self.labelNumberToDisplay.text = self.informationToDisplay(theSum: self.addUpArray())
         self.totalAmount = self.addUpArray()
         if self.plusButton.alpha == 0.2 {
